@@ -1,0 +1,16 @@
+<table>
+  <tr style="border-width: 1px;">
+    <th class="border">id</th>
+    <th class="border">name</th>
+    <th class="border">birthday</th>
+    <th class="border">bio</th>
+  </tr>
+  @for (user of users; track user.id) {
+    <tr>
+      <td style="border-width: 1px; padding: .5rem">{{ user.id }}</td>
+      <td style="border-width: 1px; padding: .5rem">{{ user.name }}</td>
+      <td style="border-width: 1px; padding: .5rem">{{ user.birthday | date: 'dd.MM.YYYY' }}</td>
+      <td style="border-width: 1px; padding: .5rem">{{ user.bio }}</td>
+    </tr>
+  }
+</table>

@@ -1,0 +1,26 @@
+nav {
+  padding: 1rem;
+  background-color: rgb(243 244 246);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 56rem;
+  align-items: center;
+  margin: auto;
+}
+
+.active {
+  font-weight: bold;
+}
+
+a {
+  text-decoration-line: underline;
+  color: black;
+}
+
+.navigation-links {
+  display: flex;
+  gap: 1rem;
+}
