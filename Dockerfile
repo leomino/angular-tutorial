@@ -21,7 +21,7 @@ COPY --from=build /app/dist/first-app/browser /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80 to allow access to the container
-EXPOSE 80
+EXPOSE $PORT
 
 # Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
